@@ -19,6 +19,7 @@ const routes: Routes = [
         (m) => m.NavigatorModule,
       ),
   },
+  { path: 'main', loadChildren: () => import('./layout/main/main.module').then(m => m.MainModule) },
 ];
 
 @NgModule({
